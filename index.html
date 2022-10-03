@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+            <div class="header__nav container-fluid">
+                <a class="header__nav-item navbar-brand" href="#">НЛК</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="header__nav-item header__nav-item__link nav-item nav-link" aria-current="page" href="#">Портфолио</a>
+                        <a class="header__nav-item header__nav-item__link nav-link" href="#">Рейтинг</a>
+                        <a class="header__nav-item header__nav-item__link nav-link" href="#">Помощь</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wrapper pt-5">
+            <div class="wrapper__container container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-10 col-xs-6">
+                        <h1 class="wrapper__title display-2">Портфолио</h1>
+                        <p class="wrapper__info lead col-lg-7 col-md-11 col-sm-10 col-xs-6">Это место, где собраны ваши научные публикации. Здесь вы можете добавлять свои научные работы, получать информацию об их уникальности и смотреть отзывы ваших научных руководителей.</p>
+                        <button type="button" class="btn btn-primary">Добавить работу</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper__container pt-5">
+            <div class="container-fluid row">
+                <div class="wrapper__container-boxes col-lg-5 col-md-7 col-sm-6">
+                    <div class="card">
+                        <h5 class="wrapper__info card-header">
+                            Ваш профиль
+                        </h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Иванов Иван Иванович</h5>
+                            <p class="card-text mb-0"><b>Научная степень:</b> Магистр.</p>
+                            <p class="card-text "><b>Специализация:</b> Инвестиционные проблемы экономически развивающихся рынков.</p>
+                            <a href="#!" class="btn btn-primary">Редактировать</a>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="wrapper__container-boxes col-lg-4 col-md-5 col-sm-6">
+                    <div class="card">
+                        <h5 class="wrapper__info card-header">
+                            Статистика
+                        </h5>
+                        <div class="card-body">
+                            <p class="card-text mb-0"><b>На платформе:</b> 2 года.</p>
+                            <p class="card-text mb-0"><b>Добавлено работ:</b> 10.</p>
+                            <p class="card-text mb-0"><b>Средняя уникальность:</b> 75%.</p>
+                            <p class="card-text mb-2"><b>Языки работ:</b> русский, английский.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <table class="wrapper__container-table table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col"><h5>Название работы</h5></th>
+                        <th scope="col"><h5>Дата загрузки</h5></th>
+                        <th scope="col"><h5>Научный руководитель</h5></th>
+                        <th scope="col"><h5>Уникальность</h5></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Привлечение инвестиций как фактор развития экономики</a></td>
+                        <td>21.05.2019</td>
+                        <td><a class="table-link" href="#">Асаншоева А.М.</a></td>
+                        <td><a class="table-link" href="#">89%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">The role of accounting in sustainable development</a></td>
+                        <td>11.02.2019</td>
+                        <td><a class="table-link" href="#">Шаляпина В.С.</a></td>
+                        <td><a class="table-link" href="#">78%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Сценарный анализ как инструмент учета рисков инвестиционного
+                            проекта</a></td>
+                        <td>05.09.2018</td>
+                        <td><a class="table-link" href="#">Васильев М.Г.</a></td>
+                        <td><a class="table-link" href="#">67%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Глобальные и региональные инвестиционные тенденции</a></td>
+                        <td>09.07.2018</td>
+                        <td><a class="table-link" href="#">Асаншоева А.М.</a></td>
+                        <td><a class="table-link" href="#">73%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Systemic risks in financial markets</a></td>
+                        <td>18.05.2018</td>
+                        <td><a class="table-link" href="#">Леонидов В.Б.</a></td>
+                        <td><a class="table-link" href="#">77%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">The influence of tax regulation liberalisation on the domestic debt
+                            market</a>
+                        </td>
+                        <td>09.03.2018</td>
+                        <td><a class="table-link" href="#">Шаляпина В.С.</a></td>
+                        <td><a class="table-link" href="#">82%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Биткоин как новый вид инвестиций</a></td>
+                        <td>29.01.2018</td>
+                        <td><a class="table-link" href="#">Асаншоева А.М.</a></td>
+                        <td><a class="table-link" href="#">71%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Проблема воспроизводства жилищного фонда в России</a></td>
+                        <td>08.11.2017</td>
+                        <td><a class="table-link" href="#">Васильев М.Г.</a></td>
+                        <td><a class="table-link" href="#">65%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Влияние безработицы на экономику СНГ</a></td>
+                        <td>17.09.2017</td>
+                        <td><a class="table-link" href="#">Васильев М.Г.</a></td>
+                        <td><a class="table-link" href="#">68%</a></td>
+                    </tr>
+                    <tr class="table_colored">
+                        <td><a class="table-link" href="#">Мировой валютный рынок Форекс</a></td>
+                        <td>02.07.2017</td>
+                        <td><a class="table-link" href="#">Васильев М.Г.</a></td>
+                        <td><a class="table-link" href="#">67%</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+    </main>
+
+    <footer class="footer container-fluid">
+        <div class="wrapper__container">
+            <p>© Научный личный кабинет. Все права защищены</p>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> -->
+</body>
+</html>

@@ -1,0 +1,155 @@
+$background-color: #E9ECEF
+$background-hover: #d6e2e0
+
+$btn-color: #54c4aa
+$btn-hover: #3da18a
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-family: "Roboto", sans-serif
+
+.header__nav
+    margin-left: 3rem
+    &-item
+        font-size: 2rem
+        color: white
+        transition: 0.2s
+        &__link
+            font-size: 1.6rem
+    &-item:hover
+        color: $btn-color
+
+.wrapper
+    background: $background-color
+    min-height: 32rem
+    transition: 0.7s
+    &:hover
+        background: $background-hover
+    &__title
+        font-size: 7.2rem
+        margin-bottom: 2rem
+        display: inline-block
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            height: 2px
+            bottom: 0
+            left: 0
+            background-color: $btn-hover
+            transform-origin: bottom right
+            transition: transform 0.5s ease-out
+        &:hover
+            &::after
+                transform: scaleX(1)
+                transform-origin: bottom left
+
+    &__info
+        font-size: 1.6rem
+        font-weight: 400
+        line-height: 2.2rem
+    &__container
+        max-width: 120rem
+        margin: 0 auto
+        margin-left: 4%
+        &-boxes
+            margin-bottom: 3.2rem
+        &-table
+            margin: 0 0 7.5rem .7rem
+            
+.btn
+    background-color: $btn-color
+    border: $btn-color
+    transition: 0.7s
+    font-size: 2rem
+    margin-bottom: .8rem
+    &:focus
+        background: $btn-hover
+        border: none !important
+        box-shadow: none !important
+        outline: 0 none !important
+
+.btn-primary:hover
+    background: $btn-hover
+    box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.25)
+
+.card
+    &-title
+        font-weight: 400
+        font-size: 2rem
+        line-height: 2.3rem
+        margin-bottom: 1.6rem
+    &-text
+        font-weight: 400
+        font-size: 1.6rem
+        line-height: 1.9rem
+    &-header
+        width: 100%
+        padding: 1.6rem 0 1.3rem 2rem
+        transition: 0.7s
+        background: $background-color
+        margin-bottom: 1.6rem
+        &:hover
+            background: $background-hover
+
+.table
+    font-size: 1.6rem
+    font-weight: 400
+    tr
+        td, th
+            padding: 1.6rem
+    h5
+        font-size: 1.6rem
+        font-weight: 700
+    thead
+        transition: 0.7s
+        background: $background-color
+        &:hover
+            background: $background-hover
+    &-link
+        text-decoration: none
+        color: black
+        &:hover
+            color: $btn-hover
+    &_colored
+        &:hover
+            background: rgba(214, 226, 224, 0.3)
+
+.footer
+    width: 100%
+    min-height: 5.1rem
+    background: $background-color
+    transition: 0.7s
+    box-sizing: border-box
+    padding: 1.6rem
+    &:hover
+        background: $background-hover
+    p
+        font-weight: 400
+        font-size: 1.6rem
+        line-height: 1.9rem
+        color: #6C757D
+        width: 100%
+        box-sizing: border-box
+        margin: 0
+        &:hover
+            color: $btn-hover
+
+@media (max-width: 575px)
+    .container
+        width: 100%
+
+    body
+        min-width: 320px
+
+    .header__nav
+        min-width: 320px
